@@ -3,7 +3,7 @@ Crear un programa que pida una frase y si esa frase es igual a “eureka” el p
 pondrá un mensaje de Correcto, sino mostrará un mensaje de Incorrecto. Nota:
 investigar la función equals() en Java.
  */
-package ejs.practicos;
+package practico;
 
 import java.util.Scanner;
 

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejpoo2;
+package Entidades;
 
 import java.util.Scanner;
 
@@ -31,15 +31,6 @@ public class Circunferencia {
     public void setRadio(double radio) {
         this.radio = radio;
     }
-    public void crearCircunferencia(){
-        System.out.println("Ingrese el radio de la circunferencia");
-        setRadio(scan.nextDouble());
-    }
-    public void area (){
-        System.out.println("Area= " + (Math.PI *(radio*radio)));
-    }
-    public void perimetro (){
-        System.out.println("Perimetro= " + (2*Math.PI*radio));
-    }
+   
     
 }

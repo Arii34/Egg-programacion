@@ -5,6 +5,7 @@
  */
 package ejpoo6;
 
+import service.CafeteraService;
 import java.util.Scanner;
 
 /**
@@ -18,7 +19,7 @@ public class EjPOO6 {
      */
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        Cafetera cafe = new Cafetera();
+        CafeteraService cafe = new CafeteraService();
         int opcion;
 
         do {

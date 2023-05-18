@@ -5,6 +5,8 @@
  */
 package ejpoo2;
 
+import Service.CircunferenciaService;
+
 /**
  *
  * @author Facundo
@@ -15,7 +17,7 @@ public class EjPOO2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Circunferencia c1 = new Circunferencia(); 
+       CircunferenciaService c1 = new CircunferenciaService(); 
        
        c1.crearCircunferencia();
        c1.area();

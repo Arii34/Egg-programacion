@@ -5,6 +5,8 @@
  */
 package ejpoo5;
 
+import Service.CuentaService;
+
 /**
  *
  * @author Facundo
@@ -15,7 +17,7 @@ public class EjPOO5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            Cuenta cue = new Cuenta();
+            CuentaService cue = new CuentaService();
             cue.crearCuenta();
             cue.consultarDatos();
     }

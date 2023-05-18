@@ -2,7 +2,7 @@
 Crea un vector llamado ‘Equipo’ cuya dimensión sea la cantidad de compañeros de equipo y
 define su tipo de dato de tal manera que te permita alojar sus nombres más adelante.
  */
-package ejs.teoricos;
+package teoricos;
 
 import java.util.Scanner;
 

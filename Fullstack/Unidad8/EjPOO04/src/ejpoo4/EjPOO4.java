@@ -5,6 +5,8 @@
  */
 package ejpoo4;
 
+import service.RectanguloService;
+
 /**
  *
  * @author Facundo
@@ -16,7 +18,7 @@ public class EjPOO4 {
      */
     public static void main(String[] args) {
 
-        Rectangulo r1 = new Rectangulo();
+        RectanguloService r1 = new RectanguloService();
         
         r1.crearRectangulo();
         r1.superficie();

@@ -9,7 +9,7 @@ public class EjPOO3 {
 
     public static void main(String[] args) {
 
-        Operacion op = new Operacion();
+        OperacionService op = new OperacionService();
         
         op.crearOperacion();
         op.sumar();
