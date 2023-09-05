@@ -12,7 +12,7 @@ public class service_Producto {
 private DAO_Producto dao;
 
  public service_Producto() {
-        this.dao = new service_Producto();
+
     }
 
   /*a) Lista el nombre de todos los productos que hay en la tabla producto.*/

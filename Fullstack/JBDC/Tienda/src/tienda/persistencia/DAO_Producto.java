@@ -2,11 +2,11 @@ package tienda.persistencia;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import tienda.entidades.producto;
+import tienda.entidades.Producto;
 
 public class DAO_Producto extends DAO {
 
-    public void guardarProducto(producto producto) throws Exception {
+    public void guardarProducto(Producto producto) throws Exception {
         try {
             if (producto == null) {
                 throw new Exception("Debe introducir un producto");
@@ -25,7 +25,7 @@ public class DAO_Producto extends DAO {
         }
     }
 
-    public void modificarProducto(producto producto) throws Exception {
+    public void modificarProducto(Producto producto) throws Exception {
         try {
             if (producto == null) {
                 throw new Exception("Debe introducir un producto");
@@ -40,7 +40,7 @@ public class DAO_Producto extends DAO {
         }
     }//modificar por nombre
     
-    public void eliminarProducto (producto producto) throws Exception{
+    public void eliminarProducto (Producto producto) throws Exception{
         try {
             String sql = "DELETE FROM producto WHERE nombre = '" + producto.getNombre() + "';";
             insertarModificarEliminar(sql);
@@ -49,18 +49,18 @@ public class DAO_Producto extends DAO {
         }
     }//eliminar por nombre
     
-    public Collection<producto> listarProductos() throws Exception{
+    public Collection<Producto> listarProductos() throws Exception{
         try {
             
             String sql = "SELECT nombre FROM producto";
             
             consultaBase(sql);
             
-            producto producto = null;
+            Producto producto = null;
             
-            Collection<producto> productos = new ArrayList();
+            Collection<Producto> productos = new ArrayList();
             while (resultado.next()){                
-                 producto = new producto();
+                 producto = new Producto();
                  producto.setCodigo(resultado.getInt(1));
                  producto.setNombre(resultado.getString(2));
                  productos.add(producto);
