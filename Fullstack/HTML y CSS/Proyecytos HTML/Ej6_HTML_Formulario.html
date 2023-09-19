@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inicio de Sesion</h1>
+    <form action="" method="post">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre aqui" required><!--para hacerlo obligatorio-->
+        <br>
+        <label for="Contrasena">Contraseña:</label>
+        
+        <input type="password" name="Contrasena" id="Contrasena">
+        <br>
+        <label for="Edad">Edad:</label>
+        <input type="number" name="Edad" id="Edad">
+        <br>
+        <label for="Fecha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="Fecha_nacimiento" id="Fecha_nacimiento">
+        <br>
+        <label for="Sexo">Sexo</label>
+        <br>
+        <input type="radio" name="Sexo" id="Sexo" value="Mujer"><label for="Sexo">Mujer</label>
+        <br>
+        <input type="radio" name="Sexo" id="Sexo" value="Hombre"><label for="Sexo">Hombre</label> 
+        <br>
+        <input type="radio" name="Sexo" id="Sexo" value="prefiero no decir"><label for="Sexo">Prefiero no decir</label>
+        <br>
+        <label for="Pais_Nac">Pais de nacimiento</label>
+        <br>
+        <select name="Pais_Nac" id="Pais_Nac">
+            <option value="Argentina">Argentina</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+        </select>
+        <br>
+        <input type="submit" name="Subir" id="Subir" value="Enviar">
+        <input type="reset" name="reset" id="reset" value="Borrar">
+    </form>
+</body>
+</html>
